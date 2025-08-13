@@ -11,7 +11,7 @@ const connection = require('./middleware/db_connect');
 app.disable("x-powered-by");
 // Dashboard
 app.use('/', express.static(path.join(__dirname, 'public')));
-
+cobates
 app.get('/app1', (req, res) => {
   res.send('Hello this Apps 1!')
 });
