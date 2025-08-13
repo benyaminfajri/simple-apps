@@ -2,7 +2,7 @@
 FROM node:18.16
 
 #PERINTAH YANG DIJALANKAN SAAT PEMBUATAN KONTAINER
-RUN upt update -y && npm install
+RUN apt update -y && npm install
 
 #COPY FILE apps
 ADD . /app
