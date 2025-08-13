@@ -2,10 +2,12 @@
 FROM node:18.16
 
 #PERINTAH YANG DIJALANKAN SAAT PEMBUATAN KONTAINER
-RUN apt update -y && npm install
+RUN apt update -y 
 
 #COPY FILE apps
 ADD . /app
+
+RUN npm install
 
 #MAINTAINER IMAGE
 
