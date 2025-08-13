@@ -7,13 +7,12 @@ RUN apt update -y
 #COPY FILE apps
 ADD . /app
 
-RUN npm install
-
 #MAINTAINER IMAGE
 
 LABEL email="benyamin.fajri@gmail.com"
 
 # PERINTAH YANG DIJALANKAN SAAT KONTAINER PERTAMA KALI JALAN
+CMD ["npm", "install"]
 CMD ["npm", "start"]
 
 # CUMAN DESKRIPSI KE MANA PORT NYA, BUKAN BENAR-BENAR EXPOSE 3000
