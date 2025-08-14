@@ -2,7 +2,7 @@ services:
   app-simpleapps:
     container_name: ct-compose-simpleapps
     build: ./apps
-    image: sa-idn
+    image: benyaminfajri/sa-idn
     ports:
       - 10000:3000
     restart: always
